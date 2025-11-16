@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; 
+  }
+  
+  :root {
+    --red: #DA2535;
+    --pink: #F7C7B9;
+    --white: #F9F9F9;
+    --gray: #8D8D8D;
+    --gray-200: #404040;
+    --black-light: #161212;
+  }
+  
+  html { scroll-behavior: smooth; }
+  
+  ol, ul { list-style: none; }
+  
+  a { text-decoration: none; }
+  
+ .intro, #doacao { background: #F9F9F9; }
+  
+  header{
+    background: rgb(0, 55, 255);
+  }
+
+  .container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  header .container, .logo, .menu ul { display: flex; }
+  
+  header .container, .logo { align-items: center; }
+  
+  header .container { padding: 20px; justify-content: space-between; }
+  
+  .logo figcaption {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 36px;
+    color: white;
+    margin-left: 16px;
+  }
+
+  
+  .logo img {
+    width: 80px; /* tamanho padrão da logo */
+    height: auto; /* mantém a proporção */
+    border-radius: 8px; /* opcional, deixa as bordas suaves */
+  }
+  
+
+  
+  .img-intro img {
+    width: 80%; /* diminui o tamanho proporcionalmente */
+    max-width: 400px; /* limita o tamanho máximo */
+    height: auto; /* mantém a proporção da imagem */
+    display: block; /* remove espaços indesejados abaixo da imagem */
+    margin: 0 auto; /* centraliza a imagem */
+    border-radius: 10px; /* opcional — cantos arredondados */
+  }
+
+  .menu ul li { margin-right: 51px; }
+  
+  .menu ul li:last-of-type { margin-right: 0; }
+  
+  .menu ul li a {
+    font-weight: 500;
+    line-height: 24px;
+    color: #F8F9FA;
+  }
+  
+  .menu-hamburguer { display: none; position: relative; bottom: -4px; }
+  
+  .menu-hamburguer img { width: 32px; }
+  
+  .intro .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between	;
+    padding: 90px 20px 140px 20px;
+  }
+  
+  .ds-intro h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 52px;
+    color: var(--black-light);
+    margin-bottom: 24px;
+  }
+  
+  .ds-intro h1 span { display: block; }
+  
+  .ds-intro p {
+    max-width: 444px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--gray-200);
+    margin-bottom: 40px;
+  }
+  
+  .ds-intro a {
+    width: 250px;
+    font-weight: 800;
+    line-height: 24px;
+    padding: 12px 32px;
+    color:  rgb(0, 55, 255);
+    display: flex;
+    align-items: center;
+    background: rgb(255, 217, 0);
+    border-radius: 8px;
+  }
+  
+  .ds-intro a img { margin-right: 10px; }
+
+  #acessorios .container-acessorios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px; /* espaçamento entre os itens */
+  }
+  
+  #acessorios .single-acessorios {
+    text-align: center;
+    max-width: 320px; /* largura máxima de cada card */
+  }
+  
+  #acessorios .single-acessorios img {
+    width: 100%; /* ocupa toda a largura do card */
+    max-width:100rem; /* controla o tamanho máximo da imagem */
+    height: auto; /* mantém proporção */
+    border-radius: 10px; /* cantos arredondados */
+    display: block;
+    margin: 0 auto 10px; /* centraliza e dá espaço embaixo */
+    object-fit: cover; /* mantém a imagem ajustada sem distorcer */
+  }
+  
+  #acessorios h3 {
+    margin-top: 10px;
+    font-size: 1.1rem;
+  }
+  
+  #acessorios p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  
+  #acessorios { padding: 48px 0 106px 0; background: var(--white); }
+  
+  #acessorios .container .title { text-align: center; margin-bottom: 38px; }
+  
+  #acessorios .container .title h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 72px;
+    color: var(--black-light);
+    margin-bottom: 12px;
+  }
+  
+  #acessorios .container .title p {
+    max-width: 477px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(0, 55, 255);
+    margin: auto;
+  }
+
+  
+  .container-acessorios { 
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap; 
+  }
+  
+  .single-acessorios { width: 230px; text-align: center; margin-bottom: 30px; }
+  
+  .single-acessorios h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 30px;
+    color:  rgb(0, 55, 255);
+  }
+  
+  .single-acessorios p {
+    max-width: 198px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--gray);
+    margin: 12px auto 0 auto;
+  }
+  
+  #doacao { padding: 90px 0 70px 0; }
+  
+  #doacao .container { display: flex; align-items: center; }
+  
+  .img-doacao { margin-right: 224px; }
+  
+  .ds-doacao h2 {
+    max-width: 488px;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 52px;
+    color: var(--black-light);
+    margin-bottom: 24px;
+  }
+  
+  .ds-doacao p {
+    max-width: 457px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--black-light);
+    margin-bottom: 32px;
+  }
+  
+  .ds-doacao a {
+    width: 250px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 14px 32px;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    background: var(--red);
+    border-radius: 8px;
+  }
+  
+  .ds-doacao a img { margin-right: 10px; }
+  
+  #contato { padding: 49px 0; background: var(--white); }
+  
+  #contato .container,
+  .redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .single-redes-sociais {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #DA253426;
+    border-radius: 50%;
+    margin-right: 43px;
+  }
+  
+  .single-redes-sociais:last-child { margin-right: 0; }
+  
+  @media screen and (max-width: 1024px) {
+    .img-doacao { margin-right: 74px; }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .intro .container { flex-direction: column-reverse; }
+  }
+  
+  @media screen and (max-width: 952px) {
+    #doacao .container { flex-direction: column; }
+  }
+  
+  @media screen and (max-width: 716px) {
+    .menu { display: none; }
+  
+    .menu-hamburguer { display: block; }
+  }
+  
+  @media screen and (max-width: 652px) {
+    .img-intro img, .img-doacao img { width: 100%; height: auto; }
+  
+    #contato .container { display: block; }
+  
+    .redes-sociais { margin-top: 40px; justify-content: flex-start; }
+  }
+  
+  @media screen and (max-width: 490px) {
+    .container-acessorios { justify-content: center; }
+  }
+  
+  @media screen and (max-width: 424px) {
+    .single-redes-sociais { margin-right: 20px; }
+  }
