@@ -231,7 +231,7 @@
   
   .ds-doacao a img { margin-right: 10px; }
   
-  #contato { padding: 49px 0; background: var(--white); }
+  #contato { padding: 49px 0; background: rgb(0, 55, 255) }
   
   #contato .container,
   .redes-sociais {
